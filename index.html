@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dice-game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="dice-game">
+      <section class="player player--1">
+        <h2 class="player__name">PLAYER 1</h2>
+        <input
+          id="total-score"
+          class="score-style"
+          type="text"
+          value="0"
+          readonly
+        />
+        <div class="player__status">
+          <div>CURRENT</div>
+          <input id="current-score" type="text" value="0" readonly />
+        </div>
+      </section>
+      <section class="player player--2">
+        <h2 class="player__name">PLAYER 2</h2>
+        <input
+          id="total-score2"
+          class="score-style"
+          type="text"
+          value="0"
+          readonly
+        />
+        <div class="player__status">
+          <div>CURRENT</div>
+          <input id="current-score" type="text" value="0" readonly />
+        </div>
+      </section>
+      <button class="btn" id="btn--new">🔄 NEW GAME</button>
+      <button class="btn" id="btn--roll">🎲 ROLL DICE</button>
+      <button class="btn" id="btn--hold">📥 HOLD</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
