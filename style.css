@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to top right, #bc2f38, #a93049, #98315a, #75357c);
+}
+
+.dice-game {
+  position: relative;
+  width: 70rem;
+  height: 38rem;
+  display: flex;
+}
+
+.score-style {
+  width: 200px;
+  font-size: 5rem;
+  margin-top: 20px;
+  margin-bottom: auto;
+  color: #c7365f;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 6rem;
+  flex: 50%;
+}
+
+.player--1 {
+  background: #d9b0bf;
+}
+
+.player--2 {
+  background: #b77c9c;
+}
+
+.player__name {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #333333;
+}
+
+.player__score {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.player__status {
+  padding: 20px 40px;
+  border-radius: 10px;
+  align-items: center;
+  background: #c3466e;
+  color: white;
+  text-align: center;
+  width: auto;
+}
+
+#current-score {
+  padding-top: 15px;
+}
+
+.player__status div {
+  font-size: 17px;
+  color: #d4c9d0;
+}
+
+.player__status input {
+  color: white;
+  width: 70px;
+  font-size: 2rem;
+}
+
+button {
+  border: none;
+  border-radius: 50rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: inherit;
+  cursor: pointer;
+  color: #605e5f;
+}
+
+#btn--new {
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#btn--roll {
+  position: absolute;
+  top: 24.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#btn--hold {
+  position: absolute;
+  top: 29rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
