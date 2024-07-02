@@ -77,6 +77,10 @@ input {
   padding-top: 15px;
 }
 
+#current-score2 {
+  padding-top: 15px;
+}
+
 .player__status div {
   font-size: 17px;
   color: #d4c9d0;
@@ -86,6 +90,11 @@ input {
   color: white;
   width: 70px;
   font-size: 2rem;
+}
+
+#dice-image {
+  width: 100px;
+  height: 100px;
 }
 
 button {
