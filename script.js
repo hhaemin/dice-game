@@ -97,7 +97,7 @@ btnHold.addEventListener("click", function () {
       document.getElementById("total-score2").value = scores[activePlayer];
     }
 
-    // 점수가 50점 이상인지 확인하기
+    // 점수가 50점 이상인지 확인하기 (게임끝 / 플레이어 전환)
     if (scores[activePlayer] >= 50) {
       // 게임 끝
       playing = false;
